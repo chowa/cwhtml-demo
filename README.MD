@@ -44,3 +44,17 @@ cwhtml-project
 |   |
 |   |-- favicon.ico
 ```
+
+## Usage
+
+### build
+
+```
+cwhtml build
+```
+
+### development
+
+```
+cwhtml dev
+```
