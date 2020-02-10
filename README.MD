@@ -4,7 +4,7 @@
 
 # Demo of cwhtml project
 
-[document][https://github.com/chowa/cwhtml]
+[document](https://github.com/chowa/cwhtml)
 
 ## Directory rules
 
