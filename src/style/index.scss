@@ -1,0 +1,82 @@
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    padding-bottom: 70px;
+    height: 100vh;
+    position: relative;
+    animation: fade 0.8s ease-in-out;
+    background-color: #34343b;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../image/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.bg:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(8px);
+    background: rgba(0, 0, 0, 0.4);
+}
+
+main {
+    height: 100%;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main img {
+    width: 60%;
+    max-width: 320px;
+}
+
+.main h1 {
+    font-size: 28px;
+    line-height: 1;
+    color: #fff;
+    padding-top: 26px;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.main dl {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 16px;
+    color: #ddd;
+    padding-top: 18px;
+    line-height: 22px;
+    max-width: 80%;
+    flex-wrap: wrap;
+}
+
+.main dl dd + dd {
+    margin-left: 12px;
+}
